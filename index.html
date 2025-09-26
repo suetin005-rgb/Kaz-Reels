@@ -1,0 +1,137 @@
+html
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaz Reels - Казахстанские видео</title>
+    <style>
+        css
+.action-btn img {
+    filter: brightness(0) invert(1); /* Делает картинки белыми */
+    transition: transform 0.2s; /* Анимация при наведении */
+}
+
+.action-btn:hover img {
+    transform: scale(1.1); /* Увеличивает при наведении */
+}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background: #000;
+            color: white;
+            height: 100vh;
+            overflow: hidden;
+        }
+        
+        /* Контейнер видео */
+        .video-container {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        /* Видео-карточка */
+        .video-card {
+            width: 100%;
+            max-width: 400px;
+            height: 85vh;
+            background: linear-gradient(135deg, #00AFCA 0%, #FEC500 100%);
+            border-radius: 15px;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        
+        /* Правая панель кнопок */
+        .right-panel {
+            position: absolute;
+            right: 10px;
+            bottom: 100px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .action-btn {
+            background: rgba(255,255,255,0.2);
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            color: white;
+            font-size: 1.2em;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        /* Нижняя панель */
+        .bottom-panel {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+        }
+        
+        .username {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+        
+        .subscribe-btn {
+            background: #FEC500;
+            color: black;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="video-container">
+        <!-- Видео карточка -->
+        <div class="video-card">
+            📹 ВИДЕО ЗДЕСЬ
+        </div>
+        
+        html
+<!-- Правая панель кнопок -->
+<div class="right-panel">
+    <button class="action-btn">
+        <img src="https://cdn-icons-png.flaticon.com/512/1077/1077035.png" alt="Лайк" width="30" height="30">
+    </button>
+    <button class="action-btn">
+        <img src="https://cdn-icons-png.flaticon.com/512/1380/1380338.png" alt="Комментарии" width="30" height="30">
+    </button>
+    <button class="action-btn">
+        <img src="https://cdn-icons-png.flaticon.com/512/5662/5662990.png" alt="Избранное" width="30" height="30">
+    </button>
+    <button class="action-btn">
+        <img src="https://cdn-icons-png.flaticon.com/512/786/786205.png" alt="Поделиться" width="30" height="30">
+    </button>
+</div>
+        
+        <!-- Нижняя панель -->
+        <div class="bottom-panel">
+            <div class="username">@kaz_user</div>
+            <div class="description">Моё первое видео в Kaz Reels! 🇰🇿</div>
+            <button class="subscribe-btn">Подписаться</button>
+        </div>
+    </div>
+</body>
+</html>
